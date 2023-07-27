@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="runAll">
+        <classes>
+            <class name="com.idc.autotest.test.testcase">
+                <!--<methods>-->
+                    <!--<include name="server1"/>-->
+                    <!--<include name="server2"/>-->
+                    <!--<include name="logdemo"/>-->
+                <!--</methods>-->
+            </class>
+        </classes>
+    </test>
+
+    <!--运行了所有用例之后，需要监听所有运行结果后生成报告-->
+    <listeners>
+        <listener class-name="com.idc.autotest.util.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+
+</suite>

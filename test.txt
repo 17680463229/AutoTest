@@ -1,4 +1,0 @@
-mergedemo
-这是master分支,这是mergedemo分支内容
-version1
-version2

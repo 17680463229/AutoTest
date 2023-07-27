@@ -1,0 +1,17 @@
+server:
+  port: 8805
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto    #依赖数据库的自增
+  mapper-locations: classpath:/mapper/*Mapper.xml   #mapper接口对应的xml文件的位置。它会去resources文件夹下找mapper/project文件夹下的Mapper.xml文件
+  type-aliases-package: com.idc.autotest.entity  #配置实体类的别名，所有的实体类都放到com.idc.autotest.entity文件夹下
